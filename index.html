@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMA - ペット向けオーダーメイドレーザー刻印ブランド</title>
+    <meta name="description" content="感情価値と実用性を兼ね備えた、ペット向けオーダーメイド刻印ブランド「ANIMA」。xTool F2 レーザー加工機を使用した高品質な名入れ・メモリアルプレートを提供します。">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="memorial">
+
+    <!-- ヘッダー -->
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo" id="header-logo">ANIMA<span>.</span></a>
+            <nav id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#about" id="nav-about">コンセプト</a></li>
+                    <li><a href="#lines" id="nav-lines">商品ライン</a></li>
+                    <li><a href="#machine" id="nav-machine">使用機材</a></li>
+                    <li><a href="#simulator" id="nav-simulator">刻印体験</a></li>
+                    <li><a href="#strategy" id="nav-strategy">事業計画</a></li>
+                </ul>
+                <div class="theme-switch-container" id="theme-switch">
+                    <button class="theme-btn active" id="theme-btn-memorial" data-target="memorial">感情価値</button>
+                    <button class="theme-btn" id="theme-btn-daily" data-target="daily">普段使い</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero" id="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content" id="hero-text-area">
+                <span class="hero-tag" id="hero-status-tag">MEMORIAL LINE</span>
+                <h1 id="hero-main-title">ペットとの絆を、一生消えない刻印に。</h1>
+                <p id="hero-description">中国から厳選輸入した高品質ペット商材に、ポータブルレーザー加工機による極めて精密な刻印を施します。思い出を刻むメモリアル商品と、日常を彩る実用的なカスタムアイテムをお届けします。</p>
+                <div class="hero-buttons">
+                    <a href="#simulator" class="btn btn-primary" id="hero-btn-experience">刻印を体験する</a>
+                    <a href="#lines" class="btn btn-secondary" id="hero-btn-details">ラインナップを見る</a>
+                </div>
+            </div>
+            <div class="hero-visual" id="hero-image-area">
+                <div class="hero-image-wrapper">
+                    <img src="images/memorial_tag.png" alt="ANIMA メモリアルタグ刻印イメージ" class="hero-image" id="hero-visual-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンセプト（事業概要） -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="section-title" id="about-title">世界に一つの、特別な価値</h2>
+                <p class="section-subtitle" id="about-subtitle">単なる文字入れにとどまらない、高級感と世界観を重視したレーザー刻印サービス。</p>
+            </div>
+            
+            <div class="lines-showcase" id="lines-grid">
+                <!-- 感情価値系 -->
+                <div class="line-card active-card" id="card-memorial" data-target="memorial">
+                    <div class="line-icon" id="icon-memorial-card">✦</div>
+                    <h3 id="title-memorial-card">感情価値系ライン</h3>
+                    <p class="line-desc" id="desc-memorial-card">思い出や記念性を重視した高付加価値商品。黒を基調とした落ち着いた雰囲気で、ペットとの絆やメモリアルな出来事を形にします。</p>
+                    <ul class="features-list" id="features-memorial">
+                        <li>メモリアルキーホルダーや写真刻印タグ</li>
+                        <li>モノトーンを基調とした高級感のあるデザイン</li>
+                        <li>大切な日付や肉球の刻印に対応</li>
+                    </ul>
+                    <div class="line-meta">
+                        <span class="line-price" id="price-memorial">3,000円〜12,000円</span>
+                        <span class="line-tag" id="target-memorial">愛犬・愛猫家 / ギフト需要</span>
+                    </div>
+                </div>
+
+                <!-- 普段使い系 -->
+                <div class="line-card" id="card-daily" data-target="daily">
+                    <div class="line-icon" id="icon-daily-card">✿</div>
+                    <h3 id="title-daily-card">普段使い系ライン</h3>
+                    <p class="line-desc" id="desc-daily-card">日常使用向けのカジュアルで実用的なカスタム商品。可愛らしくてポップなイメージで、気軽に使用できるオリジナル感を提案します。</p>
+                    <ul class="features-list" id="features-daily">
+                        <li>迷子札や名前入り首輪タグ</li>
+                        <li>フードボウルへの名入れ</li>
+                        <li>シルエットタグによる制作の効率化</li>
+                    </ul>
+                    <div class="line-meta">
+                        <span class="line-price" id="price-daily">1,000円〜4,000円</span>
+                        <span class="line-tag" id="target-daily">日常使用 / コスパ重視</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 使用機材セクション -->
+    <section class="section machine-section" id="machine">
+        <div class="container machine-grid">
+            <div class="machine-visual" id="machine-image-wrapper">
+                <img src="images/laser_engraver.png" alt="xTool F2 ポータブルレーザー加工機イメージ" class="machine-image" id="machine-img">
+            </div>
+            <div class="machine-info" id="machine-text-content">
+                <span class="machine-badge" id="machine-badge-title">PRODUCTION MACHINERY</span>
+                <h3 id="machine-main-heading">xTool F2 ポータブルレーザー加工機</h3>
+                <p id="machine-intro-paragraph">木材、金属、アクリルなどの幅広い加工に対応し、極めて高い精度のIR（赤外線）レーザーを搭載。個人事業規模に適したポータブル仕様でありながら、プロ仕様の仕上がりを実現します。</p>
+                
+                <div class="machine-reason-grid" id="reasons-container">
+                    <div class="reason-card" id="reason-1">
+                        <h4 id="reason-title-1">多素材への対応</h4>
+                        <p id="reason-desc-1">木材や金属、アクリルなどへの刻印に対応し、幅広いラインナップを展開できます。</p>
+                    </div>
+                    <div class="reason-card" id="reason-2">
+                        <h4 id="reason-title-2">IRレーザー搭載</h4>
+                        <p id="reason-desc-2">金属素材に対して美しく鮮明な刻印が可能なため、高級プレートに最適です。</p>
+                    </div>
+                    <div class="reason-card" id="reason-3">
+                        <h4 id="reason-title-3">小ロット特化</h4>
+                        <p id="reason-desc-3">１点ずつの個別オーダーメイドに対して、迅速な切り替えと加工が可能です。</p>
+                    </div>
+                    <div class="reason-card" id="reason-4">
+                        <h4 id="reason-title-4">適正な初期投資</h4>
+                        <p id="reason-desc-4">個人規模の投資額と生産パフォーマンスのバランスが最も優れた加工機です。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 刻印シミュレーター -->
+    <section class="section" id="simulator">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="section-title" id="sim-title">レーザー刻印シミュレーター</h2>
+                <p class="section-subtitle" id="sim-subtitle">名前や日付を入力して、刻印の仕上がりイメージをリアルタイムで確認できます。</p>
+            </div>
+
+            <div class="simulator-container" id="sim-wrapper">
+                <!-- プレビュー -->
+                <div class="preview-panel" id="sim-preview-area">
+                    <div class="laser-line" id="sim-laser-beam"></div>
+                    <div class="plate-canvas-wrapper" id="sim-canvas-wrapper">
+                        <!-- 刻印対象プレート -->
+                        <div class="plate-element theme-memorial" id="preview-plate">
+                            <div class="engraved-text-line engraved-title" id="preview-title-text">Coco</div>
+                            <div class="engraved-text-line engraved-subtitle" id="preview-subtitle-text">2026.06.12</div>
+                            <div class="engraved-icon" id="preview-icon-symbol">🐾</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- コントロール -->
+                <div class="control-panel" id="sim-controls">
+                    <div class="control-group" id="group-text-title">
+                        <label for="input-title">ペットのお名前</label>
+                        <input type="text" id="input-title" placeholder="お名前を入力" value="Coco">
+                    </div>
+
+                    <div class="control-group" id="group-text-subtitle">
+                        <label for="input-subtitle">記念日 / 電話番号</label>
+                        <input type="text" id="input-subtitle" placeholder="日付や連絡先を入力" value="2026.06.12">
+                    </div>
+
+                    <div class="control-group" id="group-font">
+                        <label>刻印フォント</label>
+                        <div class="font-selector" id="sim-font-selector">
+                            <button class="font-option active" id="btn-font-serif" data-font="serif">Serif (高級)</button>
+                            <button class="font-option" id="btn-font-sans" data-font="sans">Sans (モダン)</button>
+                            <button class="font-option" id="btn-font-jp" data-font="jp">日本語 (丸ゴシック)</button>
+                        </div>
+                    </div>
+
+                    <div class="control-group" id="group-icon">
+                        <label>シンボルマーク</label>
+                        <div class="icon-selector" id="sim-icon-selector">
+                            <button class="icon-option active" id="btn-icon-paw" data-icon="🐾">🐾</button>
+                            <button class="icon-option" id="btn-icon-heart" data-icon="♥">♥</button>
+                            <button class="icon-option" id="btn-icon-star" data-icon="★">★</button>
+                            <button class="icon-option" id="btn-icon-none" data-icon="">無し</button>
+                        </div>
+                    </div>
+
+                    <div class="control-group" id="group-action">
+                        <button class="btn btn-primary" id="btn-start-engrave" style="width: 100%;">模擬刻印プロセスを実行</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 事業計画詳細（タブ構成） -->
+    <section class="section strategy-section" id="strategy">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="section-title" id="strategy-title">事業展開・戦略</h2>
+                <p class="section-subtitle" id="strategy-subtitle">ペット市場における感情価値を最大化し、着実な成長を目指す事業戦略。</p>
+            </div>
+
+            <!-- タブナビゲーション -->
+            <div class="tabs-nav" id="strategy-tabs">
+                <button class="tab-btn active" id="tab-btn-sales" data-pane="pane-sales">販売・SNS戦略</button>
+                <button class="tab-btn" id="tab-btn-revenue" data-pane="pane-revenue">収益・商品展開</button>
+                <button class="tab-btn" id="tab-btn-risk" data-pane="pane-risk">リスク分析と対策</button>
+                <button class="tab-btn" id="tab-btn-roadmap" data-pane="pane-roadmap">ロードマップ</button>
+            </div>
+
+            <!-- タブコンテンツ -->
+            <div class="tab-content-wrapper" id="strategy-panes">
+                <!-- 販売・SNS戦略 -->
+                <div class="tab-pane active" id="pane-sales">
+                    <div class="pane-grid">
+                        <div class="pane-card" id="card-sales-channel">
+                            <h4 id="heading-sales-channel">販売チャネル</h4>
+                            <ul>
+                                <li><strong>minne & Creema:</strong> ハンドメイド市場への早期出店とファン構築。</li>
+                                <li><strong>ココナラ:</strong> カスタム・オーダーメイド受注のプラットフォーム活用。</li>
+                                <li><strong>将来構想:</strong> Etsyを用いたグローバル展開、およびShopify等による自社EC構築。</li>
+                            </ul>
+                        </div>
+                        <div class="pane-card" id="card-sns-strategy">
+                            <h4 id="heading-sns-strategy">SNSマーケティング</h4>
+                            <ul>
+                                <li><strong>制作プロセスの動画配信:</strong> InstagramやTikTokでの刻印動画が購買意欲を刺激。</li>
+                                <li><strong>写真素材の洗練:</strong> 感情価値系はモノトーンの黒背景、普段使い系は温かみのある生活写真。</li>
+                                <li><strong>ユーザー投稿(UGC)の促進:</strong> ペット愛好家コミュニティでの自然拡散を誘発。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 収益・商品展開 -->
+                <div class="tab-pane" id="pane-revenue">
+                    <div class="pane-grid">
+                        <div class="pane-card" id="card-revenue-model">
+                            <h4 id="heading-revenue-model">収益モデルの特徴</h4>
+                            <ul>
+                                <li><strong>感情価値系ライン:</strong> 少量販売ながら高単価・高利益率を実現するブランドの柱。</li>
+                                <li><strong>普段使い系ライン:</strong> テンプレート化による制作効率の追求と、回転率による安定収益。</li>
+                                <li><strong>低コスト仕入れ:</strong> 中国からベース商品を安価に輸入し、レーザー加工により独自の高付加価値化。</li>
+                            </ul>
+                        </div>
+                        <div class="pane-card" id="card-product-lineup">
+                            <h4 id="heading-product-lineup">初期展開商品 (各3商品)</h4>
+                            <ul>
+                                <li><strong>感情価値系:</strong> メモリアルキーホルダー、金属刻印プレート、シンプル高級アクセサリー。</li>
+                                <li><strong>普段使い系:</strong> 迷子札、名前入り首輪タグ、シルエット刻印キーホルダー。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- リスク分析と対策 -->
+                <div class="tab-pane" id="pane-risk">
+                    <div class="pane-grid">
+                        <div class="pane-card" id="card-risk-memorial">
+                            <h4 id="heading-risk-memorial">感情価値系リスクと対策</h4>
+                            <ul>
+                                <li><strong>品質要求の高さへの対応:</strong> 初期はテキストや記号などの軽カスタム中心とし、過度な写真加工依存を低減。</li>
+                                <li><strong>クレーム対策:</strong> プレビュー確認工程を厳格化し、事前に仕上がりイメージの合意を形成。</li>
+                            </ul>
+                        </div>
+                        <div class="pane-card" id="card-risk-daily">
+                            <h4 id="heading-risk-daily">普段使い系リスクと対策</h4>
+                            <ul>
+                                <li><strong>価格競争への対策:</strong> 単なる文字入れではなく、レーザーならではの立体的な陰影とデザイン性で差別化。</li>
+                                <li><strong>中国製ベースの品質問題:</strong> 仕入れルートの選定と入荷時の全数検査の徹底。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ロードマップ -->
+                <div class="tab-pane" id="pane-roadmap">
+                    <div class="pane-grid">
+                        <div class="pane-card" id="card-roadmap-near">
+                            <h4 id="heading-roadmap-near">短期・中期計画</h4>
+                            <ul>
+                                <li><strong>短期 (1-3ヶ月):</strong> 6商品のサンプル制作、SNSアカウント開設、minne/Creema等での反応検証。</li>
+                                <li><strong>中期 (4-12ヶ月):</strong> 反応の良いラインへ経営資源を集中、人気商品のバリエーション強化、写真刻印技術の向上。</li>
+                            </ul>
+                        </div>
+                        <div class="pane-card" id="card-roadmap-long">
+                            <h4 id="heading-roadmap-long">長期計画</h4>
+                            <ul>
+                                <li><strong>長期 (1年以降):</strong> 自社ECサイトの立ち上げ、ブランドとしての認知獲得、Etsyによる海外販売の本格化、上位レーザー加工機の導入。</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer id="main-footer">
+        <div class="container">
+            <div class="footer-logo" id="footer-logo-text">ANIMA<span>.</span></div>
+            <ul class="footer-nav" id="footer-links">
+                <li><a href="#about">コンセプト</a></li>
+                <li><a href="#lines">商品ライン</a></li>
+                <li><a href="#machine">使用機材</a></li>
+                <li><a href="#simulator">刻印体験</a></li>
+                <li><a href="#strategy">事業計画</a></li>
+            </ul>
+            <div class="copyright" id="footer-copyright-text">&copy; 2026 ANIMA. All Rights Reserved. Custom Laser Engraved Pet Goods.</div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
